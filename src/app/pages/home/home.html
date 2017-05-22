@@ -1,0 +1,22 @@
+<form class="create-notif" ng-submit="create()">
+	<p>Describe notification (optionally)</p>
+
+	<input type="text" class="input" placeholder="Enter optionally title..." ng-model="title">
+	<textarea class="input input--multiline" placeholder="Enter optionally text..." ng-model="text"></textarea>
+
+	<p>Select notification type (required)</p>
+
+	<input type="radio" name="type" id="type-info" value="info" ng-model="type">
+	<label class="label" for="type-info">info</label>
+
+	<input type="radio" name="type" id="type-warning" value="warning" ng-model="type">
+	<label class="label" for="type-warning">warning</label>
+
+	<input type="radio" name="type" id="type-error" value="error" ng-model="type">
+	<label class="label" for="type-error">error</label>
+
+	<hr>
+	<button type="submit" class="button button--raised">Create notification</button>
+</form>
+
+<notifications></notifications>

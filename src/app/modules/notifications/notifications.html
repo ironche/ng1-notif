@@ -1,0 +1,26 @@
+<div class="notification-container" ng-show="$ctrl.count()">
+	<div class="notification-container__dismiss">
+		<button class="button button--close" ng-click="$ctrl.removeAll()">
+			<i class="material-icons">&#xE0B8;</i>
+			Dismiss all
+		</button>
+	</div>
+	<div ng-repeat="notif in $ctrl.notifs() | orderBy:'-id'">
+		<div ng-class="notif.clazz">
+			<h4 class="notification__title">
+				{{notif.title}}
+				<small ng-if="notif.type == 'info'">
+					<countdown seconds="10" finish="$ctrl.remove(notif)"></countdown>
+				</small>
+			</h4>
+			<p class="notification__text">
+				{{notif.text}}
+			</p>
+			<div class="notification__dismiss">
+				<button class="button button--close" ng-click="$ctrl.remove(notif)">
+					<i class="material-icons">&#xE14C;</i>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

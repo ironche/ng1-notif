@@ -1,0 +1,40 @@
+.notification {
+	@offset-v: 8px;
+	@offset-h: 10px;
+
+	position: relative;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+	border-radius: 2px;
+	box-sizing: border-box;
+	padding: @offset-v @offset-h;
+	margin-bottom: @offset-v;
+	background-color: rgb(255, 255, 255);
+
+	&--info {
+		background-color: rgb(33, 150, 243);
+		color: rgb(255, 255, 255);
+	}
+	&--warning {
+		background-color: rgb(255, 193, 7);
+		color: rgb(66, 66, 66);
+	}
+	&--error {
+		background-color: rgb(244, 67, 54);
+		color: rgb(255, 255, 255);
+	}
+
+	&__title {
+		font-size: 1.4rem;
+		margin: 0 0 (@offset-v / 2);
+		padding-right: 30px;
+	}
+	&__text {
+		font-size: 1.2rem;
+		margin: 0;
+	}
+	&__dismiss {
+		position: absolute;
+		top: @offset-v;
+		right: @offset-h;
+	}
+}

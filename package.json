@@ -1,0 +1,63 @@
+{
+  "name": "ng1-notif",
+  "version": "1.0.0",
+  "description": "AngularJS notifications module",
+  "author": "Milos Manojlovic",
+  "license": "MIT",
+  "directories": {
+    "vendor": "node_modules",
+    "distProd": "build-prod",
+    "distDev": "build-dev",
+    "dev": "src"
+  },
+  "scripts": {
+    "build-prod": "gulp build:prod",
+    "start": "gulp serve:dev",
+    "test": "karma start karma.conf.js"
+  },
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-mocks": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-if": "^2.0.2",
+    "gulp-less": "^3.3.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "gulp-wrap": "^0.13.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^2.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "run-sequence": "^1.2.2",
+    "streamqueue": "^1.1.1"
+  },
+  "browserslist": [
+    "Edge >= 12",
+    "Opera >= 12",
+    "Safari >= 7",
+    "Chrome >= 24",
+    "Firefox >= 24",
+    "Explorer >= 9",
+    "iOS >= 7",
+    "Android >= 4",
+    "ChromeAndroid >= 24",
+    "FirefoxAndroid >= 24",
+    "ExplorerMobile >= 9",
+    "defaults"
+  ],
+  "private": true
+}
